@@ -12,3 +12,14 @@ sudoku.c:66:10: error: expected expression before ‘}’ token
       |          ^
 Compilation failed
 ad81ba6
+Fri 17 May 2024 11:35:54 PM UTC: 
+ sudoku.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:67:22: error: unused variable ‘adyacente’ [-Werror=unused-variable]
+   67 |                Node* adyacente = copy(n);
+      |                      ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9f72b9b
