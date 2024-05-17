@@ -23,3 +23,9 @@ sudoku.c:67:22: error: unused variable ‘adyacente’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 9f72b9b
+Fri 17 May 2024 11:36:23 PM UTC: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  0|5
+total_score: 0/70
+ee797a4

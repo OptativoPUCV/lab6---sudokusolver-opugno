@@ -65,6 +65,7 @@ List* get_adj_nodes(Node* n)
             if (is_valid(n))     //si el numero no se repite
             {
                Node* adyacente = copy(n);
+               pushBack(list, adyacente);
             }
          }
       }
