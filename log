@@ -2,3 +2,13 @@ Fri 17 May 2024 10:49:23 PM UTC:
  tests:  0|5
 total_score: 0/70
 9adccef
+Fri 17 May 2024 11:34:57 PM UTC: 
+ sudoku.c | 18 +++++++++++++++++-
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:66:10: error: expected expression before ‘}’ token
+   66 |          }
+      |          ^
+Compilation failed
+ad81ba6

@@ -49,9 +49,25 @@ int is_valid(Node* n){
 }
 
 
-List* get_adj_nodes(Node* n){
-    List* list=createList();
-    return list;
+List* get_adj_nodes(Node* n)
+{
+   List* list = createList();
+   
+   int fila, columna;
+   for (fila = 0; fila < 9; fila++)
+   {
+      int num = 1;
+      for (columna = 0; columna < 9; columna++)
+      {
+         if (n -> sudo[fila][columna] == 0) //si esta vacio
+         for (num = 1; num <= 9; num++)
+         {
+            if (is_valid(n))     //si el numero no se repite
+         }
+      }
+   }
+   
+   return list;
 }
 
 
