@@ -29,3 +29,14 @@ Fri 17 May 2024 11:36:23 PM UTC:
  tests:  0|5
 total_score: 0/70
 ee797a4
+Fri 17 May 2024 11:38:37 PM UTC: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:65:38: error: statement with no effect [-Werror=unused-value]
+   65 |             n -> sudo[fila][columna] == num;
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2b51765
