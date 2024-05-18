@@ -143,7 +143,7 @@ int is_final(Node* n)
    {
       for (int columnas = 0; columnas < 9; columnas++)
       {
-         if (n -> sudo[filas][columnas] != 0) return 1;
+         if (n -> sudo[columnas][filas] != 0) return 1;
       }
    }
       
