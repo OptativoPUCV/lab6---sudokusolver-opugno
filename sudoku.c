@@ -144,11 +144,10 @@ int is_final(Node* n)
       for (int columnas = 0; columnas < 9; columnas++)
       {
          if (n -> sudo[filas][columnas] != 0) return 1;
-         else return 0;
       }
    }
       
-   return 1;
+   return 0;
 }
 
 Node* DFS(Node* initial, int* cont){
