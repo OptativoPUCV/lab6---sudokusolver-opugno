@@ -137,8 +137,18 @@ List* get_adj_nodes(Node* n)
 }
 
 
-int is_final(Node* n){
-    return 0;
+int is_final(Node* n)
+{
+   for (int filas = 0; filas < 9; filas++)
+   {
+      for (int columnas = 0; columnas < 9; columnas++)
+      {
+         if (n -> sudo[filas][columnas] != 0) return 1;
+         else return 0;
+      }
+   }
+      
+   return 0;
 }
 
 Node* DFS(Node* initial, int* cont){
