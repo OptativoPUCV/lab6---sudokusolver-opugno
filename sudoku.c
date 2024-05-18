@@ -162,13 +162,16 @@ Node* DFS(Node* initial, int* cont)
       pop(S);
 
       if (is_final(nodo)) return nodo;
-      List* list = get_adj_nodes(nodo);
       
+      List* list = get_adj_nodes(nodo);
+      Node* primero = first(list);
       while (list != NULL)
       {
-         push(S, )
+         push(S, primero);
+         primero = next(list);
       }
-      
+
+      free(nodo);
    }
    
    return NULL;
