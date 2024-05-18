@@ -90,18 +90,17 @@ int is_valid(Node* n)
       {
          int fila = 3 * (i/3) + (j/3);
          int columna = 3 * (i%3) + (j%3);
-         int Matriz = n->sudo[k][h];
-               if(Matriz != 0){
-                 if(arreglo[Matriz] == 0){
-                   arreglo[Matriz]= 1;
-                 }
-                 else{
-                   return 0;
-
-                 }
-               }
-             }
-           }
+         
+         int matriz = n -> sudo[fila][columna];
+         if (matriz != 0)
+         {
+            if (arreglo[matriz] == 0)
+               arreglo[matriz] = 1;
+            else
+               return 0;
+         }
+      }
+   }
 
    return 1;
 }
