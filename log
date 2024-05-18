@@ -176,3 +176,13 @@ Sat 18 May 2024 10:02:08 PM UTC:
  tests:  7|1
 total_score: 55/70
 2f4b569
+Sat 18 May 2024 10:09:12 PM UTC: 
+ sudoku.c | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:169:18: error: expected expression before ‘)’ token
+  169 |          push(S, )
+      |                  ^
+Compilation failed
+846a073
