@@ -45,7 +45,16 @@ void print_node(Node* n){
 
 int is_valid(Node* n)
 {
-      
+   //Valido en filas
+   for (int filas = 0; filas < 9; filas++)
+   {
+      int arreglo[10] = {0};
+
+      for (int columnas = 0; columnas < 9; columnas++)
+      {
+         int casilla = n -> sudo[filas][columnas];
+      }
+   }
 
    return 1;
 }

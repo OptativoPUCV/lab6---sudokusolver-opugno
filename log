@@ -52,3 +52,17 @@ Fri 17 May 2024 11:48:22 PM UTC:
  tests:  2|4
 total_score: 15/70
 a85d648
+Sat 18 May 2024 12:34:05 AM UTC: 
+ sudoku.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:55:14: error: unused variable ‘casilla’ [-Werror=unused-variable]
+   55 |          int casilla = n -> sudo[filas][columnas];
+      |              ^~~~~~~
+sudoku.c:51:11: error: unused variable ‘arreglo’ [-Werror=unused-variable]
+   51 |       int arreglo[10] = {0};
+      |           ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ecfdbc6
