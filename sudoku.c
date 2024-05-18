@@ -163,10 +163,10 @@ Node* DFS(Node* initial, int* cont)
       Node* nodo = top(S);
       pop(S);
 
-      *cont= *cont-1;
-      (*cont)--;
+      *cont = *cont - 1;
+      (*cont) --;
 
-      if (is_final(nodo)) return nodo;
+      if (is_final(nodo) == 1) return nodo;
       
       List* list = get_adj_nodes(nodo);
       Node* primero = first(list);
