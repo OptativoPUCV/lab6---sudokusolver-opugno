@@ -153,13 +153,18 @@ int is_final(Node* n)
 Node* DFS(Node* initial, int* cont)
 {
    Stack* S = createStack();
-   if (S == NULL) return NULL;
    
+   if (S == NULL) return NULL;
    push(S, initial);
+
+   *cont = 1;
    while (get_size(S) != 0)
    {
       Node* nodo = top(S);
       pop(S);
+
+      *cont= *cont-1;
+      (*cont)--;
 
       if (is_final(nodo)) return nodo;
       
@@ -169,11 +174,17 @@ Node* DFS(Node* initial, int* cont)
       {
          push(S, primero);
          primero = next(list);
-      }
 
+         (*cont)++;
+         *cont = *cont +1;
+      }
+      (*cont)++;
       free(nodo);
    }
-   
+   if(*cont == 0) {
+     return NULL;
+   }
+   free(initial);
    return NULL;
 }
 
