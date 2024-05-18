@@ -175,13 +175,14 @@ Node* DFS(Node* initial, int* cont)
          push(S, primero);
          primero = next(list);
 
-         (*cont)++;
-         *cont = *cont +1;
+         (*cont) ++;
+         *cont = *cont + 1;
       }
-      (*cont)++;
+      (*cont) ++;
       free(nodo);
    }
-   if(*cont == 0) {
+   if(*cont == 0) 
+   {
      return NULL;
    }
    free(initial);
