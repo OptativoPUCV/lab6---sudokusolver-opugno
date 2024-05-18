@@ -66,3 +66,9 @@ sudoku.c:51:11: error: unused variable ‘arreglo’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 ecfdbc6
+Sat 18 May 2024 01:36:21 AM UTC: 
+ sudoku.c | 29 +++++++++++++++++++++++++++++
+ 1 file changed, 29 insertions(+)
+ tests:  5|3
+total_score: 35/70
+7cd9dc6

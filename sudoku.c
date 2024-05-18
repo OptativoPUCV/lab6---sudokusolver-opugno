@@ -53,8 +53,37 @@ int is_valid(Node* n)
       for (int columnas = 0; columnas < 9; columnas++)
       {
          int casilla = n -> sudo[filas][columnas];
+
+         if (casilla != 0)
+         {
+            if (arreglo[casilla] == 0)
+               arreglo[casilla] = 1;
+            else
+               return 0;
+         }
       }
    }
+
+   //Valido en columnas
+   for (int filas = 0; filas < 9; filas++)
+   {
+      int arreglo [10] = {0};
+      for  (int columnas = 0; columnas < 9; columnas++)
+      {
+         int cColumnas = n -> sudo[columnas][filas];
+
+         if (cColumnas != 0)
+         {
+            if (arreglo[cColumnas] == 0)
+               arreglo[cColumnas] = 1;
+            else
+               return 0;
+         }
+      }
+   }
+
+   //Valido en submatrices
+   
 
    return 1;
 }
